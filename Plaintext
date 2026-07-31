@@ -1,0 +1,36 @@
+# AWS RDS Hands-On Lab Tasks
+
+This folder contains  practical  and tasks completed for AWS Relational Database Service (RDS).
+
+## 🛠️ 
+
+1. Launch a DB instance(Engine : PostgreSQL) and connect with pg admin 4 tool
+
+2. Modify the Default Security Group :
+      - MySQL (Port: 3306)
+      - PostgreSQL (Port: 5432)
+
+3 : Database Connection with tool
+      - Download PgAdmin.
+
+4 :Connect to the RDS Instance using:
+      - **URL : dbinstance1.cbo6mcsyoalv.ap-south-1.rds.amazonaws.com **
+      - **Username (DB-Instance-1) & Password(Admin4001)**
+
+5 :Snapshot Management
+     - Manual Snapshot .
+     - Copy the snapshot and enable **encryption**.
+     - Send snapshot  in another region (e.g., Ireland / `eu-west-1`).
+
+6 :Promote Read Replica
+     - Test promoting a Read Replica into an independent, standalone DB instance.
+
+ EC2 to RDS Connection
+     - Launch an EC2 instance.
+     - Connect EC2 to the RDS instance via CLI/Application client.
+
+
+## 📌 Learnings & Key Takeaways
+- Read Replicas are for **scaling reads** and are read-only.
+- Multi-AZ is for **High Availability**, whereas Read Replicas are for **performance**.
+- Always delete RDS instances and Snapshots after lab practice to remain within **Free Tier** limits
